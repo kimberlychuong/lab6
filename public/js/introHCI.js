@@ -28,7 +28,7 @@ function addProjectDetails(e) {
 	// call AJAX endpoint
 	var projectURL = "https://lab6-kichuong.herokuapp.com/project/" + idNumber;
 	$.get(projectURL, callBackFn);
-	console.log(URL);
+	console.log(projectURL);
 	console.log("User clicked on project " + idNumber);
 }
 
