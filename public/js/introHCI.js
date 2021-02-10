@@ -26,7 +26,7 @@ function addProjectDetails(e) {
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 	// call AJAX endpoint
-	var projectURL = "http://localhost:3000/project/" + idNumber;
+	var projectURL = "https://lab6-kichuong.herokuapp.com/project/" + idNumber;
 	$.get(projectURL, callBackFn);
 	console.log(URL);
 	console.log("User clicked on project " + idNumber);
