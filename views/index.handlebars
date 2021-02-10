@@ -2,6 +2,11 @@
 
 <html>
 <head>
+	<!-- include FB partials -->
+	<script src="/js/introHCI.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+
 	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +34,11 @@
 		<div class="jumbotron">
 			<h1 id="name">Scott Klemmer</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<p class="facebookLogin">Please login through Facebook</p>
+			<p class="facebookLogin"> Please login through Facebook
+				<!-- add login button -->
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+			</p>
 		</div>
 
 		<div id="facebookPhoto" class="profile">
